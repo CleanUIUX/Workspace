@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
     <title>COFFEE BEAN KOREA</title>
+    <script src="/coffee-bean/jquery-3.7.0.min.js"></script>
+    <script src="/coffee-bean/common.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -22,43 +24,43 @@
             </ul>
         </div>
         <div class="inner">
-            <h1 class="logo"><a href="#">coffee-bin</a></h1>
-            <div class="tab_wrap">
-                <ul>
+            <h1 class="logo"><a href="javascript:;">coffee-bin</a></h1>
+            <div class="gnb">
+                <ul class="depth1">
                     <li>
                         <a href="#">BUY ONLINE</a>
-                        <div class="depth2">
+                        <div class="depth2 buy">
                             <div class="depth2_list">
-                                <p class="tit"><a href="#">View All</a></p>
+                                <a href="#" class="tit">View All</a>
                             </div>
                             <div class="depth2_list">
-                                <p class="tit"><a href="#">스틱 커피</a></p>
+                                <a href="#" class="tit">스틱 커피</a>
                                 <ul>
                                     <li><a href="#" target="_blank">스틱 커피</a></li>
                                 </ul>
                             </div>
                             <div class="depth2_list">
-                                <p class="tit"><a href="#">분쇄형 커피</a></p>
+                                <a href="#" class="tit">분쇄형 커피</a>
                                 <ul>
                                     <li><a href="#" target="_blank">드립백</a></li>
                                 </ul>
                             </div>
                             <div class="depth2_list">
-                                <p class="tit"><a href="#">캡슐 커피</a></p>
+                                <a href="#" class="tit">캡슐 커피</a>
                                 <ul>
                                     <li><a href="#" target="_blank">네스프레소 호환용</a></li>
                                     <li><a href="#" target="_blank">CBTL 호환용</a></li>
                                 </ul>
                             </div>
                             <div class="depth2_list">
-                                <p class="tit"><a href="#">원두</a></p>
+                                <a href="#" class="tit">원두</a>
                                 <ul>
                                     <li><a href="#" target="_blank">원두 가이드</a></li>
                                     <li><a href="#" target="_blank">라이트 로스트</a></li>
                                 </ul>
                             </div>
                             <div class="depth2_list">
-                                <p class="tit"><a href="#">티</a></p>
+                                <a href="#" class="tit">티</a>
                                 <ul>
                                     <li><a href="#" target="_blank">티 가이드</a></li>
                                     <li><a href="#" target="_blank">클래식티</a></li>
@@ -70,7 +72,7 @@
                         <a href="#">MEMBER`S CLUB</a>
                         <div class="depth2">
                             <div class="depth2_list">
-                                <p class="tit"><a href="#">커피빈 멤버스 클럽</a></p>
+                                <a href="#" class="tit">커피빈 멤버스 클럽</a>
                                 <ul>
                                     <li><a href="#"target="_blank">멤버스 클럽</a></li>
                                     <li><a href="#"target="_blank">커피빈 카드</a></li>
@@ -78,7 +80,7 @@
                                 </ul>
                             </div>
                             <div class="depth2_list">
-                                <p class="tit"><a href="#">커나의 커피빈</a></p>
+                                <a href="#" class="tit">커나의 커피빈</a>
                                 <ul>
                                     <li><a href="#"target="_blank">멤나의 콩/e쿠폰보기</a></li>
                                     <li><a href="#"target="_blank">나의 커피빈 카드</a></li>
@@ -91,7 +93,7 @@
                         <a href="#">MENU</a>
                         <div class="depth2">
                             <div class="depth2_list">
-                                <p class="tit"><a href="#">음료</a></p>
+                                <a href="#" class="tit">음료</a>
                                 <ul>
                                     <li><a href="#"target="_blank">신음료</a></li>
                                     <li><a href="#"target="_blank">에스프레소 음료</a></li>
@@ -99,7 +101,7 @@
                                 </ul>
                             </div>
                             <div class="depth2_list">
-                                <p class="tit"><a href="#">푸드</a></p>
+                                <a href="#" class="tit">푸드</a>
                                 <ul>
                                     <li><a href="#"target="_blank">베이커리</a></li>
                                     <li><a href="#"target="_blank">홀케익</a></li>
@@ -124,14 +126,14 @@
                         <a href="#">THE COFFEE BEAN</a>
                         <div class="depth2">
                             <div class="depth2_list">
-                                <p class="tit"><a href="#">커피빈 코리아</a></p>
+                                <a href="#" class="tit">커피빈 코리아</a>
                                 <ul>
                                     <li><a href="#"target="_blank">Simply the Best</a></li>
                                     <li><a href="#"target="_blank">커피빈 커피와 티</a></li>
                                 </ul>
                             </div>
                             <div class="depth2_list">
-                                <p class="tit"><a href="#">커피빈 소식</a></p>
+                                <a href="#" class="tit">커피빈 소식</a>
                                 <ul>
                                     <li><a href="#"target="_blank">프로모션</a></li>
                                     <li><a href="#"target="_blank">공지사항</a></li>
@@ -153,9 +155,9 @@
                         </div>
                     </li>
                 </ul>
-                <div class="btn_search">
-                    <button type="button"></button>
-                </div>
+            </div>
+            <div class="btn_search">
+                <button type="button">검색버튼</button>
             </div>
         </div>
     </header>
@@ -163,8 +165,8 @@
     <!-- main-contents -->
     <div class="main_contents">
         <div class="main_img">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="/coffee-bean/img/main_banner01.jpeg" alt="메인배너">
+            <img src="/coffee-bean/img/main_banner02.jpeg" alt="메인배너">
         </div>
         <div class="inner">
             <!-- 상품 리스트 -->
@@ -238,7 +240,6 @@
                         </a>
                     </li>
                 </ul>
-
             </div>
             <!--// 상품 리스트 -->
             <!-- 소식 리스트 -->

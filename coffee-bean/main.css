@@ -1,9 +1,37 @@
-/* header - util */
-.util{width:100%;height:40px;background:rgb(238,238,238);}
-.util ul{float:right;}
-.util ul li{float:left;margin-right:20px;}
-.util ul li:first-of-type{padding-right:20px;border-right:1px solid rgb(228,228,228);}
-.util ul li a{display:block;line-height:40px;}
-.util::after{content:'';display:block;clear:both;}
-.util ul::after{content:'';display:block;clear:both;}
-.util .btn_login{width:60px;height:40px;background:rgb(47,28,17) url(/coffee-bean/img/ico_login.png) no-repeat 50% 50%;}
+.inner{width:1200px;margin:0 auto;}
+.inner::after{content:'';display:block;clear:both;}
+/* header */
+header .util{width:100%;height:40px;background:rgb(238,238,238);}
+header .util ul{float:right;padding-right:160px;}
+header .util ul li{float:left;margin-right:20px;}
+header .util ul li:first-of-type{padding-right:20px;border-right:1px solid rgb(228,228,228);}
+header .util ul li a{display:block;line-height:40px;}
+header .util::after{content:'';display:block;clear:both;}
+header .util ul::after{content:'';display:block;clear:both;}
+header .util .btn_login{width:60px;height:40px;background:rgb(47,28,17) url(/coffee-bean/img/ico_login.png) no-repeat 50% 50%;}
+
+header .logo{float:left;width:93px;height:100px;background:url(/coffee-bean/img/logo.png) no-repeat 50% 50%;text-indent:-999px;overflow:hidden;}
+header .logo a{display:block;height:100%;}
+
+header .gnb{float:left;}
+header .gnb::after{content:'';display:block;clear:both;}
+header .gnb .depth1{float:left;margin-left:100px;}
+header .gnb .depth1::after{content:'';display:block;clear:both;}
+header .gnb .depth1 > li{float:left;padding:0 32px;}
+header .gnb .depth1 > li > a{display:block;font-weight:700;line-height:100px;}
+
+header .gnb .depth2{display:none;position:absolute;padding:40px 40px 35px;background:rgb(238,238,238);}
+header .gnb .depth2::after{content:'';display:block;clear:both;}
+header .gnb .depth2 .depth2_list{float:left;width:200px;}
+header .gnb .depth2 .depth2_list .tit{display:block;margin-bottom:6px;font-size:15px;}
+header .gnb .depth2 .depth2_list > ul > li{margin-bottom:10px;}
+header .gnb .depth2 .depth2_list > ul > li a{position:relative;padding-left:12px;font-size:13px;color:rgb(96,79,72);}
+header .gnb .depth2 .depth2_list > ul > li a::before{content:'';display:inline-block;position:absolute;top:50%;left:0;width:7px;height:1px;margin-top:-3px;background:rgb(96,79,72);}
+header .gnb .depth2.buy{left:50%;margin-left:-630px;}
+
+header .btn_search{float:right;}
+header .btn_search button{width:20px;height:100px;background:url(/coffee-bean/img/ico_search.png) no-repeat 50% 50%;text-indent:-999px;overflow:hidden;border:0;}
+
+/* main */
+.main_contents .main_img img{display:block;width:100%;}
+.main_contents .prd_wrap{width:1200px;margin:55px auto 0;}
