@@ -6,5 +6,16 @@
     $('.depth1 > li').mouseleave(function(){
         $(this).find('.depth2').stop().slideUp();
     });
+
+    // prd-슬라이더
+    $('.prd_list').slick({
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        autoplay: false,
+        dots: true,
+        arrows : false,
+        autoplaySpeed: 2000,
+        speed: 1000,
+      });
 });
 
