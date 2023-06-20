@@ -17,5 +17,15 @@
         autoplaySpeed: 2000,
         speed: 1000,
       });
+
+    $('.news_list').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        dots: true,
+        arrows : false,
+        autoplaySpeed: 2000,
+        speed: 2000,
+    });
 });
 

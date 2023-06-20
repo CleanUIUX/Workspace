@@ -35,8 +35,9 @@ header .btn_search button{width:20px;height:100px;background:url(/coffee-bean/im
 
 /* main */
 .main_contents .main_img img{display:block;width:100%;}
-.main_contents .prd_wrap{width:1200px;margin:55px auto 0;}
 
+/* 상품 리스트 */
+.main_contents .prd_wrap{width:1200px;margin:55px auto 0;}
 .main_contents .prd_list::after{content:'';display:block;clear:both;}
 .main_contents .prd_list{margin-top:35px;}
 .main_contents .prd_list li{float:left;}
@@ -48,3 +49,20 @@ header .btn_search button{width:20px;height:100px;background:url(/coffee-bean/im
 
 /* slide-dot */
 .slick-dots{border:1px solid;}
+.slick-dots li{width:15px;height:15px;}
+.slick-dots li button{width:15px;height:15px;background:rgb(207,102,26);border-radius:10px;}
+
+/* 소식 리스트 */
+.main_contents .news_list::after{content:'';display:block;clear:both;}
+.main_contents .news_list li{float:left;margin:0 15px;} 
+.main_contents .news_list li .txt_box{margin-top:25px;}
+.main_contents .news_list li .txt_box .name{font-size:18px; color:rgb(207,102,26);text-align:center;}
+
+/* instagram */
+.instagram_wrap{margin-top:100px;padding:55px 0 40px;background:rgb(124,81,161);}
+.instagram_wrap h2{color:#fff !important;}
+.instagram_wrap .con_box{width:1200px;margin:0 auto;}
+
+.instagram_wrap .btn_wrap{margin-top:30px;text-align:center;}
+.instagram_wrap .btn_insta{display:inline-block;width:400px;height:40px;line-height:40px;color:rgb(255, 255, 255);background:rgb(243,130,0);text-align:center;}
+
