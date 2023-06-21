@@ -1,0 +1,31 @@
+
+
+:root {
+	--black: #272D3B;
+	--red: #ED176F;
+	--coral:#F7817F;
+	--gradient:linear-gradient(90deg, var(--red), var(var(--coral)));
+}
+
+*{
+	font-family: 'Nunito', sans-serif;
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	text-decoration:none;
+	outline:none;
+	border:none;
+	text-transform: capitalize;
+	transition: all .2s linear;
+}
+
+*::selection{
+	background: var(--red);
+	color:#fff;
+}
+html{
+	font-size:62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top:4rem;
+}

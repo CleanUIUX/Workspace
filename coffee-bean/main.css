@@ -61,8 +61,40 @@ header .btn_search button{width:20px;height:100px;background:url(/coffee-bean/im
 /* instagram */
 .instagram_wrap{margin-top:100px;padding:55px 0 40px;background:rgb(124,81,161);}
 .instagram_wrap h2{color:#fff !important;}
-.instagram_wrap .con_box{width:1200px;margin:0 auto;}
-
+.instagram_wrap .con_box{width:1200px;margin:25px auto 0;}
+.instagram_wrap .con_box ul{display:flex;flex-wrap: wrap;}
+.instagram_wrap .con_box ul li a{display:block;overflow:hidden;}
+.instagram_wrap .con_box ul li a img{display:block;width:200px;transition: all .5s;}
+.instagram_wrap .con_box ul li a img:hover{transform:scale(1.1);}
 .instagram_wrap .btn_wrap{margin-top:30px;text-align:center;}
 .instagram_wrap .btn_insta{display:inline-block;width:400px;height:40px;line-height:40px;color:rgb(255, 255, 255);background:rgb(243,130,0);text-align:center;}
+
+/* footer */
+footer{width:100%;background:rgb(226,226,226);}
+footer .site_map{margin-bottom:30px;padding:55px 0 50px;border-bottom:1px solid rgb(75,38,22);}
+footer .site_map .list::after{content:'';display:block;clear:both;}
+footer .site_map .list > li{float:left;width:200px;}
+footer .site_map .list > li h3{font-size:18px;color:rgb(207,102,26);}
+footer .site_map .list > li .sub_list{margin-top:20px;}
+footer .site_map .list > li .sub_list li{margin-top:10px;}
+footer .site_map .list > li .sub_list li a{font-size:13px;color:rgb(75,38,22);}
+
+footer .footer_bottom::after{content:'';display:block;clear:both;}
+footer .sns_box{float:right;}
+footer .sns_box::after{content:'';display:block;clear:both;}
+footer .sns_box a:first-child{margin-left:0;}
+footer .sns_box a{float:left;display:block;width:40px;height:40px;margin-left:15px;text-indent:-999px;overflow:hidden;}
+footer .sns_box .facebook{background:url(/coffee-bean/img/ico_facebook.png) no-repeat 50% 50%;}
+footer .sns_box .insta{background:url(/coffee-bean/img/ico_instagram.png) no-repeat 50% 50%;}
+footer .sns_box .blog{background:url(/coffee-bean/img/ico_blog.png) no-repeat 50% 50%;}
+footer .sns_box .twitter{background:url(/coffee-bean/img/ico_twitter.png) no-repeat 50% 50%;}
+
+footer .info{float:left;}
+footer .info .term::after{content:'';display:block;clear: both;}
+footer .info .term li{position:relative;float:left;margin-right:8px;padding-left:8px;}
+footer .info .term li::before{content:'';display:block;position:absolute;top:0;left:0;width:1.5px;height:12px;background:rgb(95,77,63);}
+footer .info .term li:first-child{padding-left:0;}
+footer .info .term li:first-child::before{content:none;}
+footer .info .term li a{font-size:13px;color:rgb(95,77,63);}
+
 
