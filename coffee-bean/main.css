@@ -32,6 +32,13 @@ header .gnb .depth2.buy{left:50%;margin-left:-630px;}
 
 header .btn_search{float:right;}
 header .btn_search button{width:20px;height:100px;background:url(/coffee-bean/img/ico_search.png) no-repeat 50% 50%;text-indent:-999px;overflow:hidden;border:0;}
+header .btn_search.test button{width:20px;height:100px;background:url(/coffee-bean/img/ico_search_close.png) no-repeat 50% 50%;}
+header .search_box{display:none; position:absolute;top:140px;left:50%;width:1260px;height:80px;margin-left:-630px; background:rgb(238,238,238);}
+/* header .search_box.on{} */
+header .search_box form{position:relative;margin:25px 30px 0;}
+header .search_box form legend{display:none;}
+header .search_box form input{width:1160px;height:30px;margin:0 auto;font-size:16px;color:rgb(70,57,50);line-height:30px;border:0;background:rgb(238,238,238);text-align:center;}
+header .search_box form button{display:block;position:absolute;top:0;right:0;width:20px;height:30px;border:0;background:url(/coffee-bean/img/ico_search.png) no-repeat 50% 50%;text-indent:999px;}
 
 /* main */
 .main_contents .main_img img{display:block;width:100%;}

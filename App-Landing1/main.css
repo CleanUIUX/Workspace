@@ -1,0 +1,8 @@
+html{font-size:62.5%;overflow-x: hidden;scroll-behavior: smooth;scroll-padding-top:4rem;}
+
+header{position:fixed;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:2rem 9%;border-bottom:.1rem solid #fff3;background:var(--black);z-index:1000;}
+header .logo{font-size:2.5rem;font-weight:bolder;color:#fff;}
+header .navbar a{margin-left:2.5rem;font-size:2rem;color:#fff;}
+header .navbar a:hover{color:var(--red);}
+
+#menu_bar{font-size:3rem;color:#fff;cursor: pointer;}
