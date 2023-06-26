@@ -90,3 +90,24 @@
         }
     }
     );
+
+    // btn_login
+    var login = function(opt){
+        if(opt == 'open'){
+            $(".member_wrap").slideDown(500, function(){
+                $(".member_wrap").addClass("on");
+            });
+        }if(opt=="close"){
+            $(".member_wrap").slideUp(500, function(){
+                $(".member_wrap").removeClass("on");
+            });
+        }
+    }
+
+    $(document).on("click", ".btn_login", function(){
+         if($(".member_wrap").hasClass("on")){
+            login("close");
+         }else{
+            login("open");
+         }
+    })
