@@ -9,28 +9,42 @@
 
 
 
-    // prd-슬라이더
+    // slider
     $('.prd_list').slick({
         slidesToShow: 4,
-        slidesToScroll: 2,
+        slidesToScroll: 3,
         autoplay: false,
         dots: true,
         arrows : false,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1000,
         speed: 1000,
+        pauseOnHover: true,
       });
 
     $('.news_list').slick({
         slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
+        slidesToScroll: 2,
+        autoplay: false,
         dots: true,
         arrows : false,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1000,
         speed: 2000,
+        pauseOnHover: true,
     });
 });
 
+// slider - play / pause
+$(document).on("click", ".btn_pause", function(){
+    if($(".btn_pause").hasClass("on")){
+        $(".btn_pause").removeClass("on");
+        $(".prd_list").slick("slickPause");
+        $(".news_wrap").slick("slickPause");
+    }else{
+        $(".btn_pause").addClass("on");
+        $(".prd_list").slick("slickPlay");
+        $(".news_wrap").slick("slickPause");
+    }
+})
 
 
     // 검색 버튼 클릭 시 검색창 등장
