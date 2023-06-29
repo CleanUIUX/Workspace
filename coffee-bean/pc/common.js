@@ -7,8 +7,6 @@
         $(this).find('.depth2').stop().slideUp();
     });
 
-
-
     // slider
     $('.prd_list').slick({
         slidesToShow: 4,
@@ -45,7 +43,6 @@ $(document).on("click", ".btn_pause", function(){
         $(".news_wrap").slick("slickPause");
     }
 })
-
 
     // 검색 버튼 클릭 시 검색창 등장
     // case1(기본)
