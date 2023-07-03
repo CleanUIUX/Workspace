@@ -13,9 +13,20 @@ header .gnb .depth2{display:none;}
 header .logo{display:block;width:40px;height:60px;margin:0 auto;background:url(/coffee-bean/img/logo.png) no-repeat 50% 50%;background-size:40px 30px;text-indent:-999px;overflow:hidden;}
 header .logo a{display:block;height:60px;}
 
-header .util{float:right;}
+header .util{position:absolute;top:0;right:0;}
+header .util a{display:inline-block;width:55px;height:60px;text-indent:-999px;overflow:hidden;}
+header .util .btn_login{background:url(/coffee-bean/img/ico_login_m.png) no-repeat 50% 50%;background-size:25px;}
+header .util .cart{background:url(/coffee-bean/img/ico_bag_m.png) no-repeat 50% 50%;background-size:25px;}
 
 
 /* main_contents */
 .main_contents{margin-top:60px;}
 .main_contents .main_img img{display:block;width:100%;}
+
+.main_contents .m_inner{overflow:hidden;margin:35px 20px 0;}
+.main_contents h2{font-size:18px;font-weight:500;color:rgb(207,102,26);text-align:center;}
+.main_contents .prd_list .item{width:161px;}
+.main_contents .prd_list .item a{display:block;background-color: aqua;}
+
+
+/* .main_contents .prd_list .item .prd_con{} */
