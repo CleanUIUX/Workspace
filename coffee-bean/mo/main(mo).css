@@ -1,3 +1,4 @@
+h2{margin-bottom:25px;font-size:18px;font-weight:500;color:rgb(207,102,26);text-align:center;}
 header{position:fixed;top:0;left:0;width:100%;height:60px;border-bottom:1px solid rgb(238,238,238);background:rgb(255,255,255); z-index:99;}
 header .menu_trigger{position:absolute;top:20px;left:20px;width:20px;height:20px;}
 header .menu_trigger, .menu_trigger span{display:inline-block;transition:all .4s;box-sizing:border-box;}
@@ -26,7 +27,7 @@ header .util .cart{background:url(/coffee-bean/img/ico_bag_m.png) no-repeat 50% 
 
 /* prd_wrap */
 .main_contents .prd_wrap .prd_list .item .img_box{width:160px;margin:0 auto;}
-.main_contents .prd_wrap .prd_list .item .img_box img{display:block;width:150px;}
+.main_contents .prd_wrap .prd_list .item .img_box img{display:block;width:100%;}
 .main_contents .prd_wrap .prd_list .item .txt_box{text-align:center;}
 .main_contents .prd_wrap .prd_list .item .txt_box .name{font-weight:500;color:rgb(51,51,51);line-height:20px;}
 .main_contents .prd_wrap .prd_list .item .txt_box .price{color:rgb(207,102,26);}
@@ -39,6 +40,12 @@ header .util .cart{background:url(/coffee-bean/img/ico_bag_m.png) no-repeat 50% 
 
 
 /* news_wrap */
+.main_contents .news_wrap{padding-top:40px;}
+.main_contents .news_wrap .news_list .news_content .img_box img{display:block;width:100%;}
 .main_contents .news_wrap .news_list .news_content .txt_box .name{font-size:18px;color:rgb(207,102,26);text-align:center;}
 
-/* .main_contents .prd_list .item .prd_con{} */
+/* insta */
+.insta_wrap{background:rgb(124,81,161);}
+
+.insta_wrap ul{display:flex;}
+.insta_wrap ul li img{display:block;width:100%;}
