@@ -45,7 +45,9 @@ header .util .cart{background:url(/coffee-bean/img/ico_bag_m.png) no-repeat 50% 
 .main_contents .news_wrap .news_list .news_content .txt_box .name{font-size:18px;color:rgb(207,102,26);text-align:center;}
 
 /* insta */
-.insta_wrap{background:rgb(124,81,161);}
-
-.insta_wrap ul{display:flex;}
+.insta_wrap{margin-top:40px;background:rgb(124,81,161);}
+.insta_wrap .insta_inner{padding:20px 20px 40px;}
+.insta_wrap h2{color:#fff;}
+.insta_wrap ul::after{content:'';display:block;clear:both;}
+.insta_wrap ul li{float: left;width:106px;}
 .insta_wrap ul li img{display:block;width:100%;}
