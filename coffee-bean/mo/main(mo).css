@@ -11,6 +11,12 @@ header .menu_trigger span:nth-of-type(3){bottom:0;}
 header .gnb {position:absolute;top:0;left:0;display:none;}
 header .gnb .depth2{display:none;}
 
+header .gnb.on{display:inline-block;left:-260px;width:260px;height:100%;background:rgb(238,238,238);}
+
+.wrap.test{position:relative;left:260px;}
+.wrap.test header{position:inherit;}
+.wrap.test .main_contents{margin-top:0;}
+
 header .logo{display:block;width:40px;height:60px;margin:0 auto;background:url(/coffee-bean/img/logo.png) no-repeat 50% 50%;background-size:40px 30px;text-indent:-999px;overflow:hidden;}
 header .logo a{display:block;height:60px;}
 
@@ -48,6 +54,25 @@ header .util .cart{background:url(/coffee-bean/img/ico_bag_m.png) no-repeat 50% 
 .insta_wrap{margin-top:40px;background:rgb(124,81,161);}
 .insta_wrap .insta_inner{padding:20px 20px 40px;}
 .insta_wrap h2{color:#fff;}
-.insta_wrap ul::after{content:'';display:block;clear:both;}
-.insta_wrap ul li{float: left;width:106px;}
+/* .insta_wrap ul::after{content:'';display:block;clear:both;} */
+/* .insta_wrap ul li{float: left;width:106px;} */
+.insta_wrap ul{display:flex;margin-bottom:20px;}
 .insta_wrap ul li img{display:block;width:100%;}
+
+.insta_wrap .btn_insta{display:block;width:100%;height:30px;background:rgb(243,130,0);font-size:13px;color:#fff;line-height:30px;text-align:center;}
+
+/* footer */
+footer{padding:30px 0;background:rgb(226,226,226);}
+footer .sns_box{display:flex;justify-content:center;}
+footer .sns_box a{display:block;width:40px;height:40px;margin-right:10px;text-indent:-999px;}
+footer .sns_box .facebook{background:url(/coffee-bean/img/ico_facebook.png) no-repeat 50% 50%;}
+footer .sns_box .insta{background:url(/coffee-bean/img/ico_instagram.png) no-repeat 50% 50%;}
+footer .sns_box .blog{background:url(/coffee-bean/img/ico_blog.png) no-repeat 50% 50%;}
+footer .sns_box .twitter{background:url(/coffee-bean/img/ico_twitter.png) no-repeat 50% 50%;}
+
+footer .info{margin-top:25px;text-align:center;}
+footer .info a{position:relative;display:inline-block;padding-right:5px;font-size:13px;color:rgb(95,77,63);line-height:25px;}
+footer .info a::after{content:'';display:block;position:absolute;top:50%;right:0;width:1.5px;height:12px;margin-top:-6px;background:rgb(95,77,63);}
+footer .info a:last-of-type:after{content:none;}
+
+footer .address{margin-top:15px;font-size:13px;color:rgb(95,77,63);line-height:24px;text-align:center;}
