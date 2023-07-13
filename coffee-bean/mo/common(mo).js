@@ -24,15 +24,24 @@ $(document).ready(function(){
 });
 
 // 메뉴 클릭 시 오픈
-var test = function(){
+var menuClick = function(){
   if($(".gnb").hasClass("on")){
     $(".gnb").removeClass("on");
-    $(".wrap").removeClass("test");
+    $(".wrap").removeClass("move");
   }else{
     $(".gnb").addClass("on");
-    $(".wrap").addClass("test");
+    $(".wrap").addClass("move");
   }
 }
 $(document).on("click", ".menu_trigger", function(){
-  test();
+  menuClick();
 });
+
+// 고객서비스 클릭 시 서비스 오픈
+var serviceBtn = function(opt){
+  if(opt == "open"){
+    $(".c_service").slideDown(500, function(){
+      $(".c_service").addClass("on");
+    });
+  }
+}
