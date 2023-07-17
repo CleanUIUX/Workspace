@@ -37,11 +37,21 @@ $(document).on("click", ".menu_trigger", function(){
   menuClick();
 });
 
-// 고객서비스 클릭 시 서비스 오픈
-var serviceBtn = function(opt){
-  if(opt == "open"){
+// 서비스 클릭 시 동작
+var serClick = function(){
+  if($(".c_service").hasClass("open")){
+    $(".c_service").slideUp(500, function(){
+      $(".c_service").removeClass("open")
+    });
+  }else{
     $(".c_service").slideDown(500, function(){
-      $(".c_service").addClass("on");
+      $(".c_service").addClass("open")
     });
   }
-}
+};
+
+$(document).on("click", ".btn_service", function(){
+  serClick();
+});
+
+// 서브 메뉴 클릭 시 오플

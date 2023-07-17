@@ -24,17 +24,19 @@ header .gnb .link_wrap a{display:block;float:left;width:50%;height:60px;padding:
 header .gnb .link_wrap a.btn_service{position:relative;}
 header .gnb .link_wrap a.btn_service::before{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:40px;margin-top:-20px;background:#c3c1c1;}
 /* c_service */
+header .gnb .c_service{display:none;}
 header .gnb .c_service::after{content:"";display:block;clear:both;}
 header .gnb .c_service{padding:27px 20px 7px; background:rgb(204,204,204);}
 header .gnb .c_service li{float:left;width:50%;margin-bottom:20px;}
 header .gnb .c_service li a{display:block;font-size:13px;}
+header .gnb .c_service.open{display:block;}
 /* depth1 */
 header .gnb .depth1 li{position:relative;height:60px;padding-left:20px;border-bottom:1px solid rgb(204,204,204);}
 header .gnb .depth1 li a{display:block;font-weight:700;color:rgb(47,28,17);line-height:60px;}
 header .gnb .depth1 li::before{content:"";display:block;position:absolute;top:50%;right:25px;width:2px;height:18px;margin-top:-9px;background:rgb(207,102,26);}
 header .gnb .depth1 li::after{content:"";display:block;position:absolute;top:50%;right:17px;width:18px;height:2px;margin-top:-1px;background:rgb(207,102,26);}
 /* depth2 */
-header .gnb .depth2{display:none;}
+header .gnb .depth2{position:absolute;top:0;left:-260px;}
 /* gnb.on */
 header .gnb.on{display:inline-block;position:fixed;width:260px;height:100%;background:rgb(238,238,238);z-index:99;}
 /* logo */
