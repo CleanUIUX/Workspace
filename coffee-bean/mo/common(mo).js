@@ -54,4 +54,12 @@ $(document).on("click", ".btn_service", function(){
   serClick();
 });
 
-// 서브 메뉴 클릭 시 오플
+// 서브 메뉴 클릭 시 오픈
+$(".depth1 li a").on("click", function(){
+  var a = $(this);
+  var idx = a.index();
+  var box = a.closest(".gnb_inner");
+
+  box.find(".depth2").removeClass("active");
+  
+})
