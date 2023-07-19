@@ -55,11 +55,15 @@ $(document).on("click", ".btn_service", function(){
 });
 
 // 서브 메뉴 클릭 시 오픈
-$(".depth1 li a").on("click", function(){
-  var a = $(this);
-  var idx = a.index();
-  var box = a.closest(".gnb_inner");
+$(document).ready(function(){
+  $(".depth1 a").on("click", function(){
+    var tab = $(this).attr("data-tab");
 
-  box.find(".depth2").removeClass("active");
-  
-})
+    $(".depth1 a").removeClass("active");
+    $(".depth2").removeClass("active");
+    
+
+    $(this).addClass("active");
+    $("#"+tab).addClass("active");
+  });
+});
