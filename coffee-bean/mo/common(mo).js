@@ -54,11 +54,11 @@ $(document).on("click", ".btn_service", function(){
   serClick();
 });
 
-// 서브 메뉴 클릭 시 오픈
+// depth2 클릭 시 오픈 (attr 이용)
 $(document).ready(function(){
   $(".depth1 a").on("click", function(){
     var tab = $(this).attr("data-tab");
-
+    
     $(".depth1 a").removeClass("active");
     $(".depth2").removeClass("active");
     
@@ -66,4 +66,46 @@ $(document).ready(function(){
     $(this).addClass("active");
     $("#"+tab).addClass("active");
   });
+
+  $(".btn_close").on("click", function(){
+    $(".depth2").removeClass("active");
+  })
 });
+
+
+// sub_depth2 오픈
+$(".sub_tit").on("click", function(){
+  var $index = $(index);
+  
+  $(".sub_depth2").eq($index).toggleClass("active");
+})
+
+
+// 
+    // var $depth2B = $('.depth2_box');
+    // var $depth2Li = $('.depth2 > li');
+
+    // // depth1
+    // $('.depth1_box li').on('click', function(){
+    //     var $index = $(this).index();
+
+    //     $depth2B.addClass('active');
+    //     $depth2Li.eq($index).addClass('active');
+    // });
+
+    // // depth2
+    // $('.btn_close').on('click', function(){
+    //     $(this).closest('div').removeClass('active');
+    //     $depth2Li.removeClass('active');
+    // });
+
+    // // depth3
+    // $('.depth3 li').on('click', function(){
+    //     var $this = $(this);
+
+    //     $this.toggleClass('active');
+    // });
+// 
+
+
+
