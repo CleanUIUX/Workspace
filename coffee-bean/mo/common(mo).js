@@ -73,11 +73,16 @@ $(document).ready(function(){
 });
 
 
-// sub_depth2 오픈
-$(".sub_tit").on("click", function(){
-  var $index = $(index);
-  
-  $(".sub_depth2").eq($index).toggleClass("active");
+// sub_depth2 아코디언
+$(document).ready(function(){
+  $(".sub_tit").on("click", function(){
+    $(".sub_depth2").slideUp();
+    if($(this).children(".sub_depth2").is(":hidden")){
+      $(this).children(".sub_depth2").slideDown(); 
+    }else{
+      $(this).children(".sub_depth2").slideUp();
+    }
+  })
 })
 
 
