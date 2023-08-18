@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 // import Hello from './helllo';
 // import Counter from './counter';
 // import InputSample from './InputSample';
@@ -25,17 +25,20 @@ function App() {
     {
       id: 1,
       username: 'tester1',
-      email: 'tester1@gmail.com'
+      email: 'tester1@gmail.com',
+      active: true
     },
     {
       id: 2,
       username: 'tester2',
-      email: 'tester2@gmail.com'
+      email: 'tester2@gmail.com',
+      active: false
     },
     {
       id: 3,
       username: 'tester3',
-      email: 'tester3@gmail.com'
+      email: 'tester3@gmail.com',
+      active: false
     }
   ]);
 
@@ -46,13 +49,17 @@ function App() {
       username,
       email
     };
-    setUsers([...users, user]);
+    setUsers(users.concat(user));
 
     setInputs({
       username:'',
       email: ''
     });
     nextId.current += 1;
+  };
+
+  const onRemove = id => {
+    setUsers(users.filter(user => user.id !== id))
   };
   return(
     <>
@@ -62,7 +69,7 @@ function App() {
         onChange={onChange}
         onCreate={onCreate}
       />
-      <UserList users={users}/>
+      <UserList users={users} onRemove={onRemove} onToggle={onToggle}/>
     </>
   );
 }
