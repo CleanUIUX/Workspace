@@ -1,0 +1,22 @@
+/* header */
+header{height:120px;}
+header .inner{position:relative;width:1100px;margin:0 auto;}
+header h1{width:75px;height:75px;background:url(../img/img_logo.png) no-repeat;text-indent:-999px;}
+header .tab_wrap{}
+
+/* depth2 */
+header .tab_wrap .depth2{display:none;}
+/* depth3 */
+header .tab_wrap .depth3{display:none;}
+/* util */
+header .util{position:absolute;top:0;right:0;}
+header .util ul{display:flex;padding:8px 45px 0 0;}
+header .util ul li{position:relative;height:20px;padding:0 10px;line-height:20px;}
+header .util ul li::after{content:'';display:block;position:absolute;top:50%;right:0;width:1px;height:12px;margin-top:-6px;background-color:#ebebeb;}
+header .util ul li:last-of-type::after{content:none;}
+header .util ul li a{font-size:13px;color:#555;}
+header .util .btn_search{position:absolute;top:0;right:0;width:32px;height:32px;border:1px solid #ccc;border-radius:5px;background-color:#fff;}
+header .util .btn_search a{display:block;width:34px;height:34px;}
+header .util .btn_search a img{position:absolute;top:6px;right:7px;}
+header .util .btn_search label{width: 1px;height: 1px;margin: -1px;clip: rect(0, 0, 0, 0);overflow: hidden;position: absolute;}
+header .util .btn_search input{display:none;}
