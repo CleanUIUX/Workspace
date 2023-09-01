@@ -27,5 +27,21 @@ header .util .btn_search a img{position:absolute;top:6px;right:7px;}
 header .util .btn_search label{width: 1px;height: 1px;margin: -1px;clip: rect(0, 0, 0, 0);overflow: hidden;position: absolute;}
 header .util .btn_search input{display:none;position:absolute;top:0;right:0;height:27px;}
 
-/* main */
+/* main_visual */
 .main_visual{height:32vW;background:url(../img/2023_autumn_top_bg.jpeg) no-repeat;background-size:cover;}
+.main_visual .inner{position:relative;max-width:100%;height:100%;margin:0 auto;box-sizing:border-box;}
+.main_visual .inner .tit{position:absolute;top:33%;left:12%;width:22%;opacity:1;}
+.main_visual .inner .tit img{max-width:100%;}
+.main_visual .inner .main_img_set{height:100%;}
+.main_visual .inner .main_img_set .main_img1{position:absolute;top:12%;left:38%;width:16%;z-index:10;}
+.main_visual .inner .main_img_set .main_img2{position:absolute;top:12%;left:52%;width:18%;z-index:9;}
+.main_visual .inner .main_img_set .main_img3{position:absolute;top:17%;right:18%;width:18%;z-index:8;}
+.main_visual .inner .main_img_set img{max-width:100%;}
+.main_visual .inner .btn_slogon{position:absolute;top:58%;left:12%;width:22%;height:38px;}
+.main_visual .inner .btn_slogon a{display:block;width:34%;height:100%;margin:0 auto;border:2px solid #155c34;border-radius:5px;color:#155c34;text-align:center;line-height:34px;box-sizing:border-box;}
+
+/* notice_line */
+.notice_line{display:flex;}
+.notice_line .con_left{position:relative;width:50%;height:62px;background:#222;}
+.notice_line .con_left .notice_tit{}
+.notice_line .con_right{width:50%;height:62px;background:#f6f5ef;}
