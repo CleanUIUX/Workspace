@@ -9,9 +9,11 @@
 }
 .header_logo{
     width:100px;
+    height:100%;
     object-fit: contain;
     margin:0 20px;
     background: #efefef;
+    border-radius:10px;
 }
 .header_searchInput{
     width:100%;
@@ -48,4 +50,12 @@
     margin-top:4px;
     font-size:13px;
     font-weight:500;
+}
+.header_optionBasket{
+    display:flex;
+    align-items:center;
+    color:#fff;
+}
+.header_optionLineBasket{
+    margin:0 10px;
 }
