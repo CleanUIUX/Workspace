@@ -6,7 +6,7 @@ function Home() {
     return(
         <div className="home">
             <div className="home_container">
-                <img className="home_image" src="" alt="LOGO" />
+                <img className="home_image" src={process.env.PUBLIC_URL + 'logo192.png'} alt="LOGO" />
 
                 <div className="home_row">
                     <Product id="2323" title="제품1" price={1000} image="" rating={5}/>

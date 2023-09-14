@@ -1,5 +1,6 @@
 import React from "react";
 import '../src/header.css'
+import {Link} from "react-router-dom";
 
 function Header() {
     return(
@@ -14,7 +15,8 @@ function Header() {
             <div className="header_nav">
                 <div className="header_option">
                     <span className="header_optionLineOne">안녕하세요!</span>
-                    <span className="header_optionLineTwo">로그인하기</span>
+                    <Link to='/' className="header_optionLineTwo">home</Link>
+                    <Link to='/cart' className="header_optionLineTwo">cart</Link>
                 </div>
                 <div className="header_option">
                     <span className="header_optionLineOne">돌아가기</span>
